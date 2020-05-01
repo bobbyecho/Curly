@@ -12,9 +12,6 @@ jest-test:
   stage: test
   script:
     - yarn test
-
-tags:
-  - 1.0
 #codepush-android:
 #stage: codepush
 #script:

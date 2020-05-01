@@ -1,0 +1,26 @@
+image: dibop/rn-docker:1.0
+
+stages:
+  - test
+  #- build
+  #- codepush
+
+before_script:
+  - yarn
+
+jest-test:
+  stage: test
+  script:
+    - yarn test
+
+tags:
+  - 1.0
+#codepush-android:
+#stage: codepush
+#script:
+#-  write your command here
+#only:
+#- /codepush-.*/
+#artifacts:
+#path:
+#- ./android/app/build/outputs/apk

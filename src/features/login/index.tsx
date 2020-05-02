@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, TextInput, Button } from '_ui';
+import { Container, TextInput, Button } from '@ui';
 
-function Login(props) {
+function Login() {
   return (
     <Container>
       <TextInput label="Email" />

@@ -1,9 +1,9 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import store from '_models';
+import store from '@models/index';
 import { Provider } from 'react-redux';
-import ThemeProvider from '_ui/ThemeProvider';
-import RootNavigation from '_navigations';
+import { ThemeProvider } from '@ui';
+import RootNavigation from '@navigations/index';
 
 export default () => (
   <ThemeProvider>

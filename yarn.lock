@@ -1183,6 +1183,11 @@
   dependencies:
     type-detect "4.0.8"
 
+"@thwack/resolve@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@thwack/resolve/-/resolve-1.0.0.tgz#e55ebf7b439abdb24e0e2646ef2343757c3104c7"
+  integrity sha512-vKG4Lks53MKNZU5AFLApVMEfkjQBKy4dFnMzZ0fB6o86EVjR24wmWdU4t8AjIWowJXsS9wW7Qe12h2/qx3xcOA==
+
 "@types/babel__core@^7.1.7":
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.7.tgz#1dacad8840364a57c98d0dd4855c6dd3752c6b89"
@@ -2276,6 +2281,11 @@ core-js@^2.2.2, core-js@^2.4.1:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+
+core-js@^3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -6762,6 +6772,15 @@ through@^2.3.6:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
+
+thwack@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/thwack/-/thwack-0.5.0.tgz#6a792c84b171760cb169aed071b379c584fc939c"
+  integrity sha512-pv36ZiM/r+5IbEXG3bTBTeigHLGJQP6pkFwZ2Bufq3IkcFHFokS8/OfEIkvi5P3OjYrUJU2I3O8x32w9M9SFQQ==
+  dependencies:
+    "@thwack/resolve" "^1.0.0"
+    core-js "^3.6.5"
+    node-fetch "^2.6.0"
 
 time-stamp@^1.0.0:
   version "1.1.0"

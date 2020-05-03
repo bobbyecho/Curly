@@ -24,7 +24,8 @@
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.0.0-beta.13",
     "react-native-vector-icons": "^6.6.0",
-    "react-redux": "^7.2.0"
+    "react-redux": "^7.2.0",
+    "thwack": "^0.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

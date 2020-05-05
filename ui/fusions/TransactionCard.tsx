@@ -85,7 +85,7 @@ function TransactionCard(props: ITransactionCard) {
             <View size="plain" row verticalCenter style={styles.subItemLeft}>
               <Text style={styles.desc}>{moneyConverter(Number(amount))}</Text>
               <View style={styles.iconBulletSeparator} />
-              <Text style={styles.desc}>{created_at}</Text>
+              <Text style={styles.desc}>{formatDate(created_at)}</Text>
             </View>
           </View>
           <View size="plain" justifyContent="center">

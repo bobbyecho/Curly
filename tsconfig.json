@@ -13,11 +13,13 @@
     "baseUrl": ".",
     "paths": {
       "@tests": ["__tests__/*"],
-      "@ui": ["ui/index.js"],
+      "@ui": ["ui/index.ts"],
+      "@ui/*": ["ui/*"],
       "@themes/*": ["ui/themes/*"],
       "@src/*": ["src/*"],
       "@features/*": ["src/features/*"],
       "@helpers/*": ["src/helpers/*"],
+      "@models": ["src/models/index.ts"],
       "@models/*": ["src/models/*"],
       "@navigations/*": ["src/navigations/*"]
     }

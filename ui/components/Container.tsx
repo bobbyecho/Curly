@@ -1,28 +1,36 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, ViewStyle } from 'react-native';
+import {
+  StyleSheet,
+  ScrollView,
+  ViewStyle,
+  StyleProp,
+  View
+} from 'react-native';
 import colors from '@themes/colors';
 import metrics from '@themes/metrics';
 
 const styles = StyleSheet.create({
   default: {
     height: metrics.screen.fullHeight,
-    backgroundColor: colors.white,
-    paddingVertical: metrics.distance.small,
-    paddingHorizontal: metrics.distance.medium
+    backgroundColor: colors.lightGray,
+    paddingVertical: metrics.distance.s,
+    paddingHorizontal: metrics.distance.m
   }
 });
 
 interface IContainer {
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
+  scrollable?: boolean;
 }
 
 function Container(props: IContainer) {
-  const { children, style } = props;
+  const { children, style, scrollable } = props;
+  const ContainerElem = scrollable ? ScrollView : View;
   return (
-    <SafeAreaView {...props} style={[styles.default, style]}>
+    <ContainerElem {...props} style={[styles.default, style]}>
       {children}
-    </SafeAreaView>
+    </ContainerElem>
   );
 }
 

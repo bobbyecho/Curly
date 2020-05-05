@@ -1,3 +1,9 @@
-import { init } from '@rematch/core';
+import transaction from './transactionModel';
 
-export default init();
+export interface typeRootModel {
+  transaction: typeof transaction;
+}
+
+export const models: typeRootModel = {
+  transaction
+};

@@ -2,7 +2,7 @@ import React from 'react';
 import { TextInput } from 'react-native-paper';
 import { TextInputProps } from 'react-native-paper/lib/typescript/src/components/TextInput/TextInput';
 import metrics from '@themes/metrics';
-import { ViewStyle, StyleSheet } from 'react-native';
+import { ViewStyle, StyleSheet, StyleProp } from 'react-native';
 
 const themeOverride = {
   roundness: 0
@@ -10,12 +10,12 @@ const themeOverride = {
 
 const styles = StyleSheet.create({
   default: {
-    marginVertical: metrics.distance.medium
+    marginVertical: metrics.distance.m
   }
 });
 
 interface IView extends Omit<TextInputProps, 'theme'> {
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
 }
 
 function CustomTextInput(props: IView) {

@@ -13,14 +13,18 @@ function getScrenByOrientation() {
 
 export default {
   radius: {
+    commonRadius: 4,
     textInputRadius: 4,
-    buttonRadius: 4
+    buttonRadius: 4,
+    chip: 6
   },
   distance: {
-    tiny: 4,
-    small: 8,
-    medium: 16,
-    large: 24
+    xs: 4,
+    s: 8,
+    m: 12,
+    l: 16,
+    xl: 20,
+    xxl: 24
   },
   screen: {
     ...getScrenByOrientation()

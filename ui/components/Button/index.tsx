@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-native-paper';
-import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
+import { StyleSheet, ViewStyle, TextStyle, StyleProp } from 'react-native';
 import colors from '@themes/colors';
 import metrics from '@themes/metrics';
 import ButtonProps from './ButtonProps';
@@ -11,7 +11,7 @@ const themeOverride = {
 
 const styles = StyleSheet.create({
   default: {
-    marginVertical: metrics.distance.medium
+    marginVertical: metrics.distance.m
   }
 });
 
@@ -28,11 +28,11 @@ const contentStyles = StyleSheet.create({
 });
 
 interface IButton extends ButtonProps {
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
   type?: 'primary';
   children: React.ReactNode;
-  labelStyle?: TextStyle;
-  contentStyle?: ViewStyle;
+  labelStyle?: StyleProp<TextStyle>;
+  contentStyle?: StyleProp<ViewStyle>;
 }
 
 function CustomButton(props: IButton) {

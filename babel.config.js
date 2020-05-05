@@ -7,14 +7,14 @@ module.exports = {
         root: ['./src'],
         extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
         alias: {
-          '@tests': ['./__tests__'],
+          '@tests': './__tests__',
           '@ui': './ui',
-          '@themes': ['ui/themes'],
+          '@themes': './ui/themes',
           '@src': './src',
-          '@features': ['./src/features'],
-          '@helpers': ['./src/helpers'],
-          '@models': ['./src/models'],
-          '@navigations': ['./src/navigations']
+          '@features': './src/features',
+          '@helpers': './src/helpers',
+          '@models': './src/models',
+          '@navigations': './src/navigations'
         }
       }
     ]
